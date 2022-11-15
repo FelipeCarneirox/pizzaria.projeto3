@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+    <meta charset="uft-8">
+    <meta name="view port" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>La' Pizzaria</title>
+    <style type="text/css">
+     *{
+        margin: 0;
+        border: 0;
+        padding: 0;
+     }
+     html{
+        font-size: 100%;
+     }
+     
+     header{
+      background-color: rgba(255,0,0);
+      color: #fff;
+      font-family: candara, arial;
+      width: 100%;
+      position: fixed;
+      text-shadow: 2px 2px 3px #000;
+      z-index: 1;
+      
+     }
+
+     h3{
+        font-size: 3rem;
+        font-family: candara, arial;
+        margin: 0;
+        padding: 5px;
+     }
+     h4{
+        font-size: 2rem;
+        font-family: candara, arial;
+        margin: 0;
+        padding-left: 5px;
+        padding-bottom: 5px;
+     }
+     body{
+        background-color: rgba(255,255,224);
+     }
+     .container{
+        display: block;
+        background-color: #fff;
+        width: 95%;
+        box-shadow: 1px 1px 2px 2px rgba(255,255,0);
+        margin: 0 auto;
+        max-width: 90%;
+        max-height: 90%;
+        min-width: 0;
+        min-height: 0;
+        margin-top: 40px;
+     }
+     footer{
+        font-family: candara, arial;
+        color: #fff;
+        background-color: rgba(255,0,0);
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-shadow: 2px 2px 3px #000;
+    
+        
+     }
+
+     p{
+        font-family: candara, arial;
+        text-align: justify;
+        padding: 10px;
+        font-size: 1.6rem;
+     }
+     h1{
+        font-family: candara, arial;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 5.0rem;
+        text-shadow: 2px 2px 2px #000;
+        color: rgba(255, 0, 0, 1.0);
+     }
+     h2{
+        font-family: candara, arial;
+        text-align: center;
+        padding: 5px;
+        font-size: 2.2rem;
+        color: rgba(255, 0, 0, 1.0);
+        text-shadow: 1px 1px 1px #000;
+     }
+     .texto-footer{
+        text-align: center;
+        font-family: candara, arial;
+        padding: 5px;
+        font-size: 1.6rem;
+        padding-bottom: 10px;
+     }
+     
+     h5{
+        font-family: candara, arial;
+        text-align: center;
+        padding: 1px;
+        font-size: 1.9rem;
+     }
+     button{
+      font-size: candara, arial;
+      
+     }
+     #grid-container{
+        margin-top: 5px;
+        background-color: rgba(255,99,71);
+        padding: 10px;
+
+     }
+     .grid{
+        display: grid;
+        grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 1px;
+        max-width: 1200px;
+        margin: 0 auto;
+        
+     }
+     .grid div{
+        background-color: #fff;
+        font-family: candara, arial;
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 2px;
+     }
+     #formulário{
+        background-color: rgba(173, 276, 230, 1.0);
+     }
+     .formulario-contato{
+       font-family: candara, arial;
+       text-align: left;
+       font-size: 1.8rem;
+       padding: 10px;
+       margin-left: 5%;
+       font-weight: bold;
+     }
+     input{
+      font-family: sans-serif;
+      font-size: 1.7rem;
+      padding: 5px;
+     }
+     .dados-formulario{
+
+       width: 60%;
+
+     }
+     nav{
+      text-align: right;
+      margin-top: 10px;
+      font-family: candara, arial;
+      font-size: 1.6rem;
+      margin-right: 2%;
+      word-spacing: 10px;
+     }
+
+     a{
+      text-decoration: none;
+      color: rgba(255, 255, 255, 1.0);
+      transition: all 300ms ease-in-out;
+     }
+
+     a:hover{
+      color: rgba(255, 255, 0);
+     }
+    .imagem-pizza{
+      width: 24rem;
+      height: 16rem;
+      border-radius: 10px;
+    }
+    
+    img:hover{
+      transform: translate(1%, 1%) scale(1.0);
+      transition: 300ms ease-in-out;
+      
+    }
+    .imagem-whats{
+      width: 200px;
+      height: 190px;
+      background-color: rgba(255, 255, 0, 1,0);
+      position: fixed;
+      right: 0;
+      text-align: center;
+      margin-top: 5%;
+      z-index: 1;
+      border-radius: 30px;
+      padding-top: 60px;
+    }
+    .whats{
+      font-family: candara, arial;
+      right: 0;
+      text-align: right;
+      padding: 0;
+    }
+   
+   
+    </style>
+
+ </head>
+
+    <body>
+        <header>
+        <!-- <nav>
+            <a href="#">INÍCIO</a>
+            <a href="#">CURSOS</a>
+            <a href="#">SOBRE</a>
+         </nav>-->
+            <h3>la' Pizzaria</h3>
+            <h4>DESDE 1974</h4>
+            <h5 class="whats">Peça agora pelo Whatsapp</h5>
+
+            
+        </header>
+        <!--<div class="Compre">
+
+            <h5>Peça por Whatsapp</h5>-->
+            
+           <button> 
+         
+            <a href="https://api.whatsapp.com/send?phone=5598984176402&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20o%20pedido%20de">
+              <img class="imagem-whats" src="img/whatsapp.png">
+            </a>
+            </button>
+         
+        <!--</div>-->
+
+        <br><br><br><br><br><br><br>
+        <section class="container">
+          <h1>La' Pizzaria<br>com 50% de desconto<br>De Segunda a Quinta-feira</h1>
+                 
+
+        </section>
+        <br><!--
+        <section class="container">
+            <h1>CARNEIROXSOLUCTION</h1>
+            <p>
+              Análise de sistemas é a atividade que tem como finalidade a realização de estudos de processos a fim de encontrar o melhor caminho racional para que a informação possa ser processada. Os analistas de sistemas estudam os diversos sistemas existentes entre hardwares (equipamentos), softwares (programas) e o usuário final.
+            </p>
+            <p>
+                Análise de sistemas é a atividade que tem como finalidade a realização de estudos de processos a fim de encontrar o melhor caminho racional para que a informação possa ser processada. Os analistas de sistemas estudam os diversos sistemas existentes entre hardwares (equipamentos), softwares (programas) e o usuário final.
+            </p>-->
+        <br><br>
+
+        <section class="container" id="grid-container">
+            <h3>Conheça as La'Pizzas</h3>
+            <div class="grid">
+            <div>
+                <img class="imagem-pizza" src="img/calabresa.jpg" alt="Pizza de Calabresa">
+
+                <h2>Calabresa</h2>
+
+            </div>
+            <div>
+               <img class="imagem-pizza" src="img/frango.jpg" alt="Pizza de Frango">
+
+               <h2>Frango</h2>
+
+           </div>
+           <div>
+            <img class="imagem-pizza" src="img/marguerita.jpg" alt="Pizza de Marguerita">
+
+            <h2>Marguerita</h2>
+
+           </div>
+           <div>
+            <img class="imagem-pizza" src="img/mussarela.jpg" alt="Pizza de Mussarrela">
+
+            <h2>Mussarela</h2>
+
+          </div>
+          <div>
+            <img class="imagem-pizza" src="img/palmito.jpg" alt="Pizza de Palmito">
+
+            <h2>Palmito</h2>
+
+          </div>
+          <div>
+            <img class="imagem-pizza" src="img/portuguesa.jpg" alt="Pizza de Portuguesa">
+
+            <h2>Portuguesa</h2>
+
+          </div>
+         </div>
+
+        </section> 
+
+        <br><!--
+        <section class="container" id="formulário">
+
+         <h2>Selecione um produto para mais informações</h2>
+
+         <form action="#" method="get" target="_blank">
+
+            <p class="formulario-contato">
+
+            <label for="nome">Nome</label><br>
+            <input class="dados-formulario" type="text" id="nome" name="nome" placeholder="Insira seu nome: ">
+
+            </p>
+
+            
+            <p class="formulario-contato">
+
+               <label for="contato">Contato</label><br>
+               <input class="dados-formulario" type="tel" id="tel" name="tel" placeholder="Insira seu Whatsapp: ">
+               <br>
+   
+            </p>
+            <p class="formulario-contato">
+               <input type="checkbox" id="web" name="web" value="Cursos de desenv web">
+               <label for="web">Quero saber mais sobre Cursos de desenvolvimento web!</label>
+               <br><br>
+
+               <input type="checkbox" id="ofiice" name="office" value="Cursos de pacote office">
+               <label for="office">Quero saber mais sobre Cursos de pacote office!</label>
+               <br><br>
+
+               <input type="checkbox" id="marketing" name="marketing" value="Cursos de marketing">
+               <label for="marketing">Quero saber mais sobre Cursos de marketing digital!</label>
+               <br><br>
+
+            </p>
+            <p class="formulario-contato">
+
+               <input type="reset" value="LIMPAR">
+               <input type="enviar" value="ENVIAR">
+
+            </p>
+
+         </form>
+
+        </section>-->
+          
+
+        <br><br>
+        <footer>
+
+            <h3>la' Pizzaria</h3>
+            <h4>Desde 1974</h4>
+            <br><br>
+            <p class="texto-footer">CONTATOS:</p>
+            <p class="texto-footer">Email: la'pizzaria@gmail.com</p>
+            <p class="texto-footer">Whatsapp: (98) 0000-0000</p>
+            <p class="texto-footer">CNPJ: 000.000/0001-00</p>
+
+        </footer>
+        </body>
+ 
+</html>
